@@ -1,5 +1,12 @@
 $white: #ffffff !default;
 
-$red: #ff0000 !default;
+$bg-color: #ff0000 !default;
+
+$bg-color-lightest: lighten($bg-color, 20%) !default;
+
+$bg-color-light: lighten($bg-color, 10%) !default;
+
+$bg-color-dark: darken($bg-color, 5%) !default;
 
 $blue: #0000ff !default;
+

@@ -4,3 +4,12 @@
   font-weight: bold;
   font-style: italic;
 }
+
+@mixin button {
+  border-radius: 10px;
+  border: $bg-color-dark;
+}
+
+@mixin primary-button {
+
+}
