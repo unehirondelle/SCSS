@@ -1,0 +1,39 @@
+.line_1 {
+ background-color: lighten($red, 20%);
+}
+
+.line_2 {
+  background-color: lighten($red, 10%);
+}
+
+.line_3 {
+background-color: lighten($red, 1%);
+}
+
+.line_4 {
+  background-color: darken($red, 5%);
+}
+
+h1 {
+  @include main-text;
+}
+
+
+
+@media (max-width: 760px) {
+  .line_1 {
+    background-color: lighten($blue, 20%);
+  }
+
+  .line_2 {
+    background-color: lighten($blue, 10%);
+  }
+
+  .line_3 {
+    background-color: lighten($blue, 1%);
+  }
+
+  .line_4 {
+    background-color: darken($blue, 5%);
+  }
+}
