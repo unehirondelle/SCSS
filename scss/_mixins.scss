@@ -7,9 +7,13 @@
 
 @mixin button {
   border-radius: 10px;
-  border: $bg-color-dark;
+  border-color: $bg-color-dark;
+  border-width: 0.5px;
+  border-style: solid;
+  width: 100%;
+  box-shadow: 2px 2px 1px $shadow;
 }
 
 @mixin primary-button {
-
+  background-image: linear-gradient(to top left, $bg-color-light, $bg-color-dark);
 }

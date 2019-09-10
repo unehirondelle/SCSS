@@ -1,7 +1,6 @@
-.line_1 {
-  background-color: #ff6666;
-}
-
+/*.line_1 {
+ background-color: lighten($bg-color, 20%);
+}*/
 .line_2 {
   background-color: #ff3333;
 }
@@ -12,6 +11,18 @@
 
 .line_4 {
   background-color: #e60000;
+}
+
+button {
+  border-radius: 10px;
+  border-color: #e60000;
+  border-width: 0.5px;
+  border-style: solid;
+  width: 100%;
+  box-shadow: 2px 2px 1px #2f4f4f;
+}
+button .primary-button {
+  background-image: linear-gradient(to top left, #ff3333, #e60000);
 }
 
 h1 {

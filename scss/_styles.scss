@@ -1,6 +1,6 @@
-.line_1 {
+/*.line_1 {
  background-color: lighten($bg-color, 20%);
-}
+}*/
 
 .line_2 {
   background-color: lighten($bg-color, 10%);
@@ -12,6 +12,14 @@ background-color: $bg-color;
 
 .line_4 {
   background-color: darken($bg-color, 5%);
+}
+
+button {
+  @include button;
+
+  .primary-button {
+    @include primary-button;
+  }
 }
 
 h1 {
