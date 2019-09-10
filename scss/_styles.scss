@@ -1,6 +1,8 @@
 body {
+  margin: 0;
   background-color: $background;
 }
+
 /*.line_1 {
  background-color: lighten($bg-color, 20%);
 }
@@ -16,6 +18,36 @@ background-color: $bg-color;
 .line_4 {
   background-color: darken($bg-color, 5%);
 }*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: $bg-color-secondary;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+
+  & a {
+    display: block;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    @include main-text;
+  }
+
+  & a:hover {
+    @include secondary-button;
+  }
+}
+
+.container {
+  margin-top: 4.5rem;
+}
 
 [value|=line] {
   @include main-text;
@@ -41,6 +73,13 @@ background-color: $bg-color;
   @include visited-button;
 }
 
+.footer {
+  @include main-text;
+  background-color: $shadow;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 
 @media (max-width: 760px) {
   $bg-color: $blue;
@@ -50,10 +89,10 @@ background-color: $bg-color;
   body {
     background-color: $blue-background;
   }
-.small {
-  background-color: $bg-color-visited-dark;
-  color: $bg-color;
-}
+  .small {
+    background-color: $bg-color-visited-dark;
+    color: $bg-color;
+  }
   /*.primary-button {
     @include primary-button;
   }

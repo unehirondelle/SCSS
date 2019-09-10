@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   background-color: #f6a0b0;
 }
 
@@ -17,6 +18,39 @@ background-color: $bg-color;
 .line_4 {
   background-color: darken($bg-color, 5%);
 }*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e8153c;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+li a {
+  display: block;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Times New Roman";
+  font-size: 1.5rem;
+}
+li a:hover {
+  background-image: linear-gradient(to bottom right, #f6a0b0, #d11336);
+}
+
+.container {
+  margin-top: 4.5rem;
+}
+
 [value|=line] {
   text-align: center;
   color: #ffffff;
@@ -32,7 +66,7 @@ background-color: $bg-color;
   border-width: 1px;
   border-style: solid;
   width: 100%;
-  box-shadow: 2px 2px 1px #2f4f4f;
+  box-shadow: 0 0 2px 1px #2f4f4f;
   margin: 1rem auto;
   padding: 1rem;
 }
@@ -50,6 +84,19 @@ background-color: $bg-color;
 
 .visited-button {
   background-image: linear-gradient(to bottom right, white, #f97979);
+}
+
+.footer {
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Times New Roman";
+  font-size: 1.5rem;
+  background-color: #2f4f4f;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 @media (max-width: 760px) {

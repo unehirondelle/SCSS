@@ -1,3 +1,5 @@
+
+
 @mixin main-text {
   text-align: center;
   color: $white;
@@ -13,7 +15,7 @@
   border-width: 1px;
   border-style: solid;
   width: 100%;
-  box-shadow: 2px 2px 1px $shadow;
+  box-shadow: 0 0 2px 1px $shadow;
   margin: 1rem auto;
   padding: 1rem;
 }
