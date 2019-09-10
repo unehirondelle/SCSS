@@ -1,6 +1,6 @@
 /*.line_1 {
  background-color: lighten($bg-color, 20%);
-}*/
+}
 
 .line_2 {
   background-color: lighten($bg-color, 10%);
@@ -12,18 +12,30 @@ background-color: $bg-color;
 
 .line_4 {
   background-color: darken($bg-color, 5%);
+}*/
+
+[value|=line] {
+    @include main-text;
 }
 
-button {
+.button  {
   @include button;
 
-  .primary-button {
-    @include primary-button;
+  &:hover {
+    @include secondary-button;
   }
 }
 
-h1 {
-  @include main-text;
+.primary-button {
+  @include primary-button;
+}
+
+.secondary-button {
+  @include secondary-button;
+}
+
+.visited-button {
+  @include visited-button;
 }
 
 

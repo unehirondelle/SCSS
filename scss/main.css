@@ -1,35 +1,51 @@
 /*.line_1 {
  background-color: lighten($bg-color, 20%);
-}*/
+}
+
 .line_2 {
-  background-color: #ff3333;
+  background-color: lighten($bg-color, 10%);
 }
 
 .line_3 {
-  background-color: #ff0000;
+background-color: $bg-color;
 }
 
 .line_4 {
-  background-color: #e60000;
-}
-
-button {
-  border-radius: 10px;
-  border-color: #e60000;
-  border-width: 0.5px;
-  border-style: solid;
-  width: 100%;
-  box-shadow: 2px 2px 1px #2f4f4f;
-}
-button .primary-button {
-  background-image: linear-gradient(to top left, #ff3333, #e60000);
-}
-
-h1 {
+  background-color: darken($bg-color, 5%);
+}*/
+[value|=line] {
   text-align: center;
   color: #ffffff;
   font-weight: bold;
   font-style: italic;
+  font-family: "Times New Roman";
+  font-size: 1.5rem;
+}
+
+.button {
+  border-radius: 10px;
+  border-color: #f42323;
+  border-width: 1px;
+  border-style: solid;
+  width: 100%;
+  box-shadow: 2px 2px 1px #2f4f4f;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+.button:hover {
+  background-image: linear-gradient(to bottom right, #f6a0b0, #d11336);
+}
+
+.primary-button {
+  background-image: linear-gradient(to bottom right, #fccdcd, #f42323);
+}
+
+.secondary-button {
+  background-image: linear-gradient(to bottom right, #f6a0b0, #d11336);
+}
+
+.visited-button {
+  background-image: linear-gradient(to bottom right, white, #ff5050);
 }
 
 @media (max-width: 760px) {

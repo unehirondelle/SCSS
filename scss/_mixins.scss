@@ -3,17 +3,27 @@
   color: $white;
   font-weight: bold;
   font-style: italic;
+  font-family: "Times New Roman";
+  font-size: 1.5rem;
 }
 
 @mixin button {
   border-radius: 10px;
   border-color: $bg-color-dark;
-  border-width: 0.5px;
+  border-width: 1px;
   border-style: solid;
   width: 100%;
   box-shadow: 2px 2px 1px $shadow;
+  margin: 1rem 0;
+  padding: 1rem;
 }
 
 @mixin primary-button {
-  background-image: linear-gradient(to top left, $bg-color-light, $bg-color-dark);
+  background-image: linear-gradient(to bottom right, $bg-color-pale, $bg-color-dark);
+}
+@mixin secondary-button {
+  background-image: linear-gradient(to bottom right, $bg-color-secondary-pale, $bg-color-secondary-dark);
+}
+@mixin visited-button {
+  background-image: linear-gradient(to bottom right, $bg-color-visited-pale, $bg-color-visited-dark);
 }
