@@ -1,3 +1,6 @@
+body {
+  background-color: $background;
+}
 /*.line_1 {
  background-color: lighten($bg-color, 20%);
 }
@@ -15,10 +18,10 @@ background-color: $bg-color;
 }*/
 
 [value|=line] {
-    @include main-text;
+  @include main-text;
 }
 
-.button  {
+.button {
   @include button;
 
   &:hover {
@@ -39,22 +42,27 @@ background-color: $bg-color;
 }
 
 
- @media (max-width: 760px) {
-   $bg-color: $blue;
+@media (max-width: 760px) {
+  $bg-color: $blue;
+  $bg-color-secondary: $blue-secondary;
+  $bg-color-visited: $blue-visited;
 
-   .line_1 {
-     background-color: lighten($bg-color, 20%);
-   }
+  body {
+    background-color: $blue-background;
+  }
+.small {
+  background-color: $bg-color-visited-dark;
+  color: $bg-color;
+}
+  /*.primary-button {
+    @include primary-button;
+  }
 
-   .line_2 {
-     background-color: lighten($bg-color, 10%);
-   }
+  .secondary-button {
+    @include secondary-button;
+  }
 
-   .line_3 {
-     background-color: lighten($bg-color, 1%);
-   }
-
-   .line_4 {
-     background-color: darken($bg-color, 5%);
-   }
+  .visited-button {
+    @include visited-button;
+  }*/
 }

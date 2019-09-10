@@ -1,3 +1,7 @@
+body {
+  background-color: #f6a0b0;
+}
+
 /*.line_1 {
  background-color: lighten($bg-color, 20%);
 }
@@ -29,7 +33,7 @@ background-color: $bg-color;
   border-style: solid;
   width: 100%;
   box-shadow: 2px 2px 1px #2f4f4f;
-  margin: 1rem 0;
+  margin: 1rem auto;
   padding: 1rem;
 }
 .button:hover {
@@ -45,25 +49,30 @@ background-color: $bg-color;
 }
 
 .visited-button {
-  background-image: linear-gradient(to bottom right, white, #ff5050);
+  background-image: linear-gradient(to bottom right, white, #f97979);
 }
 
 @media (max-width: 760px) {
-  .line_1 {
-    background-color: #6666ff;
+  body {
+    background-color: #d0d4f5;
   }
 
-  .line_2 {
-    background-color: #3333ff;
+  .small {
+    background-color: #f97979;
+    color: #525ecc;
   }
 
-  .line_3 {
-    background-color: #0505ff;
+  /*.primary-button {
+    @include primary-button;
   }
 
-  .line_4 {
-    background-color: #0000e6;
+  .secondary-button {
+    @include secondary-button;
   }
+
+  .visited-button {
+    @include visited-button;
+  }*/
 }
 
 /*# sourceMappingURL=main.css.map */
