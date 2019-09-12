@@ -10,6 +10,7 @@
 body {
   margin: 0;
   background-color: #f6a0b0;
+  height: auto;
 }
 
 /*.line_1 {
@@ -27,7 +28,7 @@ background-color: $bg-color;
 .line_4 {
   background-color: darken($bg-color, 5%);
 }*/
-header {
+header, .block {
   font-family: "Open Sans Condensed", sans-serif;
   text-align: center;
   color: #ffffff;
@@ -38,15 +39,19 @@ header {
   margin: 3.5rem 0 0;
   padding: 2rem 0;
 }
-header h1 {
+header h1, .block h1 {
   padding-top: 1rem;
   margin-top: 0;
   margin-bottom: 0;
 }
-header p {
+header p, .block p {
   color: #2f4f4f;
   padding-bottom: 1rem;
   margin: 0;
+}
+
+.block {
+  margin-bottom: 3.5rem;
 }
 
 ul {
@@ -133,6 +138,7 @@ img {
   position: fixed;
   bottom: 0;
   width: 100%;
+  margin-top: 1rem;
 }
 
 @media (max-width: 760px) {
