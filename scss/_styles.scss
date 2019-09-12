@@ -22,16 +22,18 @@ background-color: $bg-color;
 
 header, .block {
   @include header;
+
   & h1 {
     padding-top: 1rem;
     margin-top: 0;
     margin-bottom: 0;
   }
+
   & p {
     color: $shadow;
     padding-bottom: 1rem;
     margin: 0;
-     }
+  }
 }
 
 .block {
@@ -47,23 +49,23 @@ ul {
   position: fixed;
   top: 0;
   width: 100%;
-}
 
-li {
-  float: left;
-  position: relative;
-  display: flex;
+  li {
+    float: right;
+    position: relative;
+    display: flex;
 
 
-  & a {
-    display: block;
-    text-decoration: none;
-    padding: 0.75rem 1rem;
-    @include main-text;
-  }
+    & a {
+      display: block;
+      text-decoration: none;
+      padding: 0.75rem 1rem;
+      @include main-text;
+    }
 
-  & a:hover {
-    @include secondary-button;
+    & a:hover {
+      @include secondary-button;
+    }
   }
 }
 
@@ -115,10 +117,18 @@ img {
     background-color: $background-alt;
   }
 
+  h1, [value|=line] {
+    font-size: 0.9em;
+  }
+
+  p {
+    font-size: 0.7em;
+  }
+
   .primary-button {
     //@include color-scheme;
     @include primary-button-alt;
-      }
+  }
 
   .secondary-button {
     @include secondary-button-alt;

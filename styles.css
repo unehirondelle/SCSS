@@ -64,13 +64,12 @@ ul {
   top: 0;
   width: 100%;
 }
-
-li {
-  float: left;
+ul li {
+  float: right;
   position: relative;
   display: flex;
 }
-li a {
+ul li a {
   display: block;
   text-decoration: none;
   padding: 0.75rem 1rem;
@@ -81,7 +80,7 @@ li a {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 1.5rem;
 }
-li a:hover {
+ul li a:hover {
   background-image: linear-gradient(to bottom right, #f6a0b0, #d11336);
 }
 
@@ -147,6 +146,14 @@ img {
   $bg-color-visited: $blue-visited;*/
   body {
     background-color: #d0d4f5;
+  }
+
+  h1, [value|=line] {
+    font-size: 0.9em;
+  }
+
+  p {
+    font-size: 0.7em;
   }
 
   .primary-button {
