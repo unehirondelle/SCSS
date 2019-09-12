@@ -47,7 +47,7 @@ ul {
 li {
   float: left;
   position: relative;
-  display: inline-block;
+  display: flex;
 
 
   & a {
@@ -60,6 +60,12 @@ li {
   & a:hover {
     @include secondary-button;
   }
+}
+
+img {
+  width: 50%;
+  display: flex;
+  margin: auto;
 }
 
 [value|=line] {

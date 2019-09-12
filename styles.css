@@ -63,7 +63,7 @@ ul {
 li {
   float: left;
   position: relative;
-  display: inline-block;
+  display: flex;
 }
 li a {
   display: block;
@@ -80,6 +80,12 @@ li a:hover {
   background-image: linear-gradient(to bottom right, #f6a0b0, #d11336);
 }
 
+img {
+  width: 50%;
+  display: flex;
+  margin: auto;
+}
+
 [value|=line] {
   text-align: center;
   color: #ffffff;
@@ -94,10 +100,11 @@ li a:hover {
   border-color: #f42323;
   border-width: 1px;
   border-style: solid;
-  width: 100%;
+  width: 50%;
   box-shadow: 0 0 2px 1px #2f4f4f;
   margin: 1rem auto 0;
   padding: 1rem;
+  display: block;
 }
 .button:hover {
   background-image: linear-gradient(to bottom right, #f6a0b0, #d11336);
