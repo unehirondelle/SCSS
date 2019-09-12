@@ -1,3 +1,12 @@
+/*
+@mixin color-scheme {
+  @media screen and (max-width: 760px) {
+    $bg-color: $blue;
+    $bg-color-secondary: $blue-secondary;
+    $bg-color-visited: $blue-visited;
+  }
+}
+*/
 body {
   margin: 0;
   background-color: #f6a0b0;
@@ -18,6 +27,28 @@ background-color: $bg-color;
 .line_4 {
   background-color: darken($bg-color, 5%);
 }*/
+header {
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 100%;
+  background-color: #558f8f;
+  margin: 3.5rem 0 0;
+  padding: 2rem 0;
+}
+header h1 {
+  padding-top: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+header p {
+  color: #2f4f4f;
+  padding-bottom: 1rem;
+  margin: 0;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -31,6 +62,8 @@ ul {
 
 li {
   float: left;
+  position: relative;
+  display: inline-block;
 }
 li a {
   display: block;
@@ -38,25 +71,21 @@ li a {
   padding: 0.75rem 1rem;
   text-align: center;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: bolder;
   font-style: italic;
-  font-family: "Times New Roman";
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 1.5rem;
 }
 li a:hover {
   background-image: linear-gradient(to bottom right, #f6a0b0, #d11336);
 }
 
-.container {
-  margin-top: 4.5rem;
-}
-
 [value|=line] {
   text-align: center;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: bolder;
   font-style: italic;
-  font-family: "Times New Roman";
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 1.5rem;
 }
 
@@ -67,7 +96,7 @@ li a:hover {
   border-style: solid;
   width: 100%;
   box-shadow: 0 0 2px 1px #2f4f4f;
-  margin: 1rem auto;
+  margin: 1rem auto 0;
   padding: 1rem;
 }
 .button:hover {
@@ -89,9 +118,9 @@ li a:hover {
 .footer {
   text-align: center;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: bolder;
   font-style: italic;
-  font-family: "Times New Roman";
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 1.5rem;
   background-color: #2f4f4f;
   position: fixed;
@@ -100,13 +129,23 @@ li a:hover {
 }
 
 @media (max-width: 760px) {
+  /*$bg-color: $blue;
+  $bg-color-secondary: $blue-secondary;
+  $bg-color-visited: $blue-visited;*/
   body {
     background-color: #d0d4f5;
   }
 
-  .small {
-    background-color: #f97979;
-    color: #525ecc;
+  .primary-button {
+    background-image: linear-gradient(to bottom right, #c8ccef, #3e4cc6);
+  }
+
+  .secondary-button {
+    background-image: linear-gradient(to bottom right, #4e5ff8, #06148e);
+  }
+
+  .visited-button {
+    background-image: linear-gradient(to bottom right, white, #7986f9);
   }
 
   /*.primary-button {

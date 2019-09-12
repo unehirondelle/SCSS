@@ -2,8 +2,6 @@ $white: #ffffff !default;
 
 $background: #f6a0b0 !default;
 
-
-
 $bg-color: #f53b3b !default;
 
 $bg-color-pale: lighten($bg-color, 30%) !default;
@@ -36,9 +34,6 @@ $bg-color-visited-light: lighten($bg-color-visited, 10%) !default;
 
 $bg-color-visited-dark: darken($bg-color-visited, 5%) !default;
 
-$blue-background: #d0d4f5 !default;
-$blue: #525ecc !default;
-$blue-secondary: #0717a6 !default;
-$blue-visited: #919cfa !default;
 
 $shadow: #2f4f4f;
+

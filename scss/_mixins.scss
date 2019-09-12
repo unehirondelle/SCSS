@@ -1,12 +1,26 @@
-
+@mixin main-font {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
 
 @mixin main-text {
   text-align: center;
   color: $white;
-  font-weight: bold;
+  font-weight: bolder;
   font-style: italic;
-  font-family: "Times New Roman";
+  @include main-font;
   font-size: 1.5rem;
+}
+
+@mixin header {
+  @include main-font;
+  text-align: center;
+  color: $white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 100%;
+  background-color: lighten($shadow, 20%);
+  margin: 3.5rem 0 0;
+  padding: 2rem 0;
 }
 
 @mixin button {
@@ -16,16 +30,29 @@
   border-style: solid;
   width: 100%;
   box-shadow: 0 0 2px 1px $shadow;
-  margin: 1rem auto;
+  margin: 1rem auto 0;
   padding: 1rem;
 }
+
+/*
+@mixin color-scheme {
+  @media screen and (max-width: 760px) {
+    $bg-color: $blue;
+    $bg-color-secondary: $blue-secondary;
+    $bg-color-visited: $blue-visited;
+  }
+}
+*/
 
 @mixin primary-button {
   background-image: linear-gradient(to bottom right, $bg-color-pale, $bg-color-dark);
 }
+
 @mixin secondary-button {
   background-image: linear-gradient(to bottom right, $bg-color-secondary-pale, $bg-color-secondary-dark);
 }
+
 @mixin visited-button {
   background-image: linear-gradient(to bottom right, $bg-color-visited-pale, $bg-color-visited-dark);
 }
+

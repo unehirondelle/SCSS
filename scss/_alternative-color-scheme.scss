@@ -1,0 +1,44 @@
+$bg-color-alt: #525ecc !default;
+
+$bg-color-pale-alt: lighten($bg-color-alt, 30%) !default;
+
+$bg-color-lightest-alt: lighten($bg-color-alt, 20%) !default;
+
+$bg-color-light-alt: lighten($bg-color-alt, 10%) !default;
+
+$bg-color-dark-alt: darken($bg-color-alt, 5%) !default;
+
+
+$bg-color-secondary-alt: #0717a6 !default;
+
+$bg-color-secondary-pale-alt: lighten($bg-color-secondary-alt, 30%) !default;
+
+$bg-color-secondary-lightest-alt: lighten($bg-color-secondary-alt, 20%) !default;
+
+$bg-color-secondary-light-alt: lighten($bg-color-secondary-alt, 10%) !default;
+
+$bg-color-secondary-dark-alt: darken($bg-color-secondary-alt, 5%) !default;
+
+
+$bg-color-visited-alt: #919cfa !default;
+
+$bg-color-visited-pale-alt: lighten($bg-color-visited-alt, 30%) !default;
+
+$bg-color-visited-lightest-alt: lighten($bg-color-visited-alt, 20%) !default;
+
+$bg-color-visited-light-alt: lighten($bg-color-visited-alt, 10%) !default;
+
+$bg-color-visited-dark-alt: darken($bg-color-visited-alt, 5%) !default;
+
+
+$background-alt: #d0d4f5 !default;
+
+@mixin primary-button-alt {
+  background-image: linear-gradient(to bottom right, $bg-color-pale-alt, $bg-color-dark-alt);
+}
+@mixin secondary-button-alt {
+  background-image: linear-gradient(to bottom right, $bg-color-secondary-pale-alt, $bg-color-secondary-dark-alt);
+}
+@mixin visited-button-alt {
+  background-image: linear-gradient(to bottom right, $bg-color-visited-pale-alt, $bg-color-visited-dark-alt);
+}

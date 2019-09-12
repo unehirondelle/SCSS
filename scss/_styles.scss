@@ -19,6 +19,20 @@ background-color: $bg-color;
   background-color: darken($bg-color, 5%);
 }*/
 
+header {
+  @include header;
+  & h1 {
+    padding-top: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  & p {
+    color: $shadow;
+    padding-bottom: 1rem;
+    margin: 0;
+     }
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -32,6 +46,9 @@ ul {
 
 li {
   float: left;
+  position: relative;
+  display: inline-block;
+
 
   & a {
     display: block;
@@ -43,10 +60,6 @@ li {
   & a:hover {
     @include secondary-button;
   }
-}
-
-.container {
-  margin-top: 4.5rem;
 }
 
 [value|=line] {
@@ -82,17 +95,27 @@ li {
 }
 
 @media (max-width: 760px) {
-  $bg-color: $blue;
+  /*$bg-color: $blue;
   $bg-color-secondary: $blue-secondary;
-  $bg-color-visited: $blue-visited;
+  $bg-color-visited: $blue-visited;*/
 
   body {
-    background-color: $blue-background;
+    background-color: $background-alt;
   }
-  .small {
-    background-color: $bg-color-visited-dark;
-    color: $bg-color;
+
+  .primary-button {
+    //@include color-scheme;
+    @include primary-button-alt;
+      }
+
+  .secondary-button {
+    @include secondary-button-alt;
   }
+
+  .visited-button {
+    @include visited-button-alt;
+  }
+
   /*.primary-button {
     @include primary-button;
   }
