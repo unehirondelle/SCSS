@@ -30,9 +30,13 @@ header, .services, .portfolio, .about {
   }
 
   & p {
-    color: $shadow;
+    color: darken($shadow, 5%);
     padding: 0 1rem 1rem;
     margin: 0;
+  }
+
+  & p.description {
+    height: 12rem;
   }
 }
 
@@ -78,6 +82,7 @@ ul {
 .services, .portfolio {
   background-color: lighten($shadow, 10%);
   margin-bottom: 1rem;
+
   .services-cards, .portfolio-cards {
     @include card;
   }

@@ -38,9 +38,12 @@ header h1, .services h1, .portfolio h1, .about h1 {
   margin-bottom: 0;
 }
 header p, .services p, .portfolio p, .about p {
-  color: #2f4f4f;
+  color: #253f3f;
   padding: 0 1rem 1rem;
   margin: 0;
+}
+header p.description, .services p.description, .portfolio p.description, .about p.description {
+  height: 12rem;
 }
 
 .about {
