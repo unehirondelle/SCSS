@@ -1,9 +1,9 @@
 /*@import "about";
 @import "footer";*/
 body {
-    margin: 0;
-    background-color: #f6a0b0;
-    height: auto;
+  margin: 0;
+  background-color: #f6a0b0;
+  height: auto;
 }
 
 /*.line_1 {
@@ -21,169 +21,175 @@ background-color: $bg-color;
 .line_4 {
   background-color: darken($bg-color, 5%);
 }*/
-header, .about {
-    font-family: "Open Sans Condensed", sans-serif;
-    text-align: center;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 1.5rem;
-    width: 100%;
-    background-color: #558f8f;
-    margin: 3.5rem 0 0;
-    padding: 2rem 0;
+header, .services, .portfolio, .about {
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 100%;
+  background-color: #558f8f;
+  margin: 3.5rem 0 0;
+  padding: 2rem 0;
 }
-
-header h1, .about h1 {
-    padding-top: 1rem;
-    margin-top: 0;
-    margin-bottom: 0;
+header h1, .services h1, .portfolio h1, .about h1 {
+  padding-top: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-
-header p, .about p {
-    color: #2f4f4f;
-    padding-bottom: 1rem;
-    margin: 0;
+header p, .services p, .portfolio p, .about p {
+  color: #2f4f4f;
+  padding: 0 1rem 1rem;
+  margin: 0;
 }
 
 .about {
-    margin-bottom: 3.5rem;
+  margin-bottom: 3.5rem;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #e8153c;
-    position: fixed;
-    top: 0;
-    width: 100%;
+  list-style-type: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e8153c;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-
 ul li {
-    float: right;
-    position: relative;
-    display: flex;
+  float: left;
+  position: relative;
+  display: flex;
 }
-
 ul li a {
-    display: block;
-    text-decoration: none;
-    padding: 0.75rem 1rem;
-    text-align: center;
-    color: #ffffff;
-    font-weight: bolder;
-    font-style: italic;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-size: 1.5rem;
+  display: block;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.5rem;
 }
-
 ul li a:hover {
-    background-image: linear-gradient(to bottom right, #f6a0b0, #d11336);
-}
-
-.portfolio {
-    background-color: #2f4f4f;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-}
-
-.card {
-    width: 30%;
-    margin: 0.7rem;
-}
-
-img {
-    max-width: 100%;
-    margin: auto;
-}
-
-[value|=line] {
-    text-align: center;
-    color: #ffffff;
-    font-weight: bolder;
-    font-style: italic;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-size: 1.5rem;
-}
-
-.button {
-    border-radius: 10px;
-    border-color: #f42323;
-    border-width: 1px;
-    border-style: solid;
-    box-shadow: 0 0 2px 1px #2f4f4f;
-    margin: 1rem auto 0;
-    padding: 1rem;
-    display: block;
-    width: 100%;
-}
-
-.button:hover {
-    background-image: linear-gradient(to bottom right, #f6a0b0, #d11336);
-}
-
-.primary-button {
-    background-image: linear-gradient(to bottom right, #fccdcd, #f42323);
-}
-
-.secondary-button {
-    background-image: linear-gradient(to bottom right, #f6a0b0, #d11336);
-}
-
-.visited-button {
-    background-image: linear-gradient(to bottom right, white, #f97979);
+  background-image: linear-gradient(to bottom right, #f6a0b0, #d11336);
+  border-color: #d11336;
 }
 
 .content {
-    max-width: 50%;
-    margin: auto;
+  max-width: 50%;
+  margin: auto;
+}
+
+.services, .portfolio {
+  background-color: #426f6f;
+  margin-bottom: 1rem;
+}
+.services .services-cards, .services .portfolio-cards, .portfolio .services-cards, .portfolio .portfolio-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.card {
+  width: 30%;
+  margin: 0.7rem;
+}
+
+img {
+  max-width: 100%;
+  margin: auto;
+}
+
+[value|=service], [value|=card] {
+  text-align: center;
+  color: #ffffff;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.5rem;
+}
+
+.button {
+  border-radius: 10px;
+  border-color: #f42323;
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: 0 0 2px 1px #2f4f4f;
+  padding: 1rem;
+  width: 100%;
+}
+.button:hover {
+  background-image: linear-gradient(to bottom right, #f6a0b0, #d11336);
+  border-color: #d11336;
+}
+
+.primary-button {
+  background-image: linear-gradient(to bottom right, #fccdcd, #f42323);
+}
+
+.secondary-button {
+  background-image: linear-gradient(to bottom right, #f6a0b0, #d11336);
+  border-color: #d11336;
 }
 
 .footer {
-    text-align: center;
-    color: #ffffff;
-    font-weight: bolder;
-    font-style: italic;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-size: 1.5rem;
-    background-color: #2f4f4f;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    margin-top: 1rem;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.5rem;
+  background-color: #2f4f4f;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 1rem;
 }
 
 @media (max-width: 760px) {
-    /*$bg-color: $blue;
-    $bg-color-secondary: $blue-secondary;
-    $bg-color-visited: $blue-visited;*/
-    body {
-        background-color: #d0d4f5;
-    }
+  /*$bg-color: $blue;
+  $bg-color-secondary: $blue-secondary;
+  $bg-color-visited: $blue-visited;*/
+  body {
+    background-color: #d0d4f5;
+  }
 
-    h1, [value|=line] {
-        font-size: 0.9em;
-    }
+  h1, [value|=line] {
+    font-size: 0.9em;
+  }
 
-    p {
-        font-size: 0.7em;
-    }
+  p {
+    font-size: 0.7em;
+  }
 
-    .primary-button {
-        background-image: linear-gradient(to bottom right, #c8ccef, #3e4cc6);
-    }
+  .primary-button {
+    background-image: linear-gradient(to bottom right, #c8ccef, #3e4cc6);
+  }
 
-    .secondary-button {
-        background-image: linear-gradient(to bottom right, #4e5ff8, #06148e);
-    }
+  .secondary-button {
+    background-image: linear-gradient(to bottom right, #4e5ff8, #06148e);
+  }
 
-    .visited-button {
-        background-image: linear-gradient(to bottom right, white, #7986f9);
-    }
+  .visited-button {
+    background-image: linear-gradient(to bottom right, white, #7986f9);
+  }
 
+  /*.primary-button {
+    @include primary-button;
+  }
+
+  .secondary-button {
+    @include secondary-button;
+  }
+
+  .visited-button {
+    @include visited-button;
+  }*/
 }
 
 /*# sourceMappingURL=styles.css.map */

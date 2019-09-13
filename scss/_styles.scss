@@ -20,7 +20,7 @@ background-color: $bg-color;
   background-color: darken($bg-color, 5%);
 }*/
 
-header, .about {
+header, .services, .portfolio, .about {
   @include header;
 
   & h1 {
@@ -31,7 +31,7 @@ header, .about {
 
   & p {
     color: $shadow;
-    padding-bottom: 1rem;
+    padding: 0 1rem 1rem;
     margin: 0;
   }
 }
@@ -42,6 +42,7 @@ header, .about {
 
 ul {
   list-style-type: none;
+  float: right;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -51,7 +52,7 @@ ul {
   width: 100%;
 
   li {
-    float: right;
+    float: left;
     position: relative;
     display: flex;
 
@@ -69,8 +70,17 @@ ul {
   }
 }
 
-.portfolio {
-  @include portfolio;
+.content {
+  max-width: 50%;
+  margin: auto;
+}
+
+.services, .portfolio {
+  background-color: lighten($shadow, 10%);
+  margin-bottom: 1rem;
+  .services-cards, .portfolio-cards {
+    @include card;
+  }
 }
 
 .card {
@@ -83,7 +93,7 @@ img {
   margin: auto;
 }
 
-[value|=line] {
+[value|=service], [value|=card] {
   @include main-text;
 }
 
@@ -93,6 +103,7 @@ img {
   &:hover {
     @include secondary-button;
   }
+
 }
 
 .primary-button {
@@ -101,15 +112,6 @@ img {
 
 .secondary-button {
   @include secondary-button;
-}
-
-.visited-button {
-  @include visited-button;
-}
-
-.content {
-  max-width: 50%;
-  margin: auto;
 }
 
 .footer {
