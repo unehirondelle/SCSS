@@ -21,7 +21,7 @@ background-color: $bg-color;
 .line_4 {
   background-color: darken($bg-color, 5%);
 }*/
-header, .services, .portfolio, .about {
+header, .services, .portfolio, .about, .contacts {
   font-family: "Open Sans Condensed", sans-serif;
   text-align: center;
   color: #ffffff;
@@ -29,25 +29,21 @@ header, .services, .portfolio, .about {
   font-size: 1.5rem;
   width: 100%;
   background-color: #558f8f;
-  margin: 3.5rem 0 0;
+  margin: 3.5rem 0;
   padding: 2rem 0;
 }
-header h1, .services h1, .portfolio h1, .about h1 {
+header h1, .services h1, .portfolio h1, .about h1, .contacts h1 {
   padding-top: 1rem;
   margin-top: 0;
   margin-bottom: 0;
 }
-header p, .services p, .portfolio p, .about p {
+header p, header [type~=phone], header [type~=email], .services p, .services [type~=phone], .services [type~=email], .portfolio p, .portfolio [type~=phone], .portfolio [type~=email], .about p, .about [type~=phone], .about [type~=email], .contacts p, .contacts [type~=phone], .contacts [type~=email] {
   color: #253f3f;
   padding: 0 1rem 1rem;
   margin: 0;
 }
-header p.description, .services p.description, .portfolio p.description, .about p.description {
+header p.description, .services p.description, .portfolio p.description, .about p.description, .contacts p.description {
   height: 12rem;
-}
-
-.about {
-  margin-bottom: 3.5rem;
 }
 
 ul {
@@ -84,7 +80,8 @@ ul li a:hover {
 
 .content {
   max-width: 50%;
-  margin: auto;
+  margin: 5rem auto;
+  padding-bottom: 1rem;
 }
 
 .services, .portfolio {
@@ -152,6 +149,10 @@ img {
   bottom: 0;
   width: 100%;
   margin-top: 1rem;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  font-size: 0.8rem;
 }
 
 @media (max-width: 760px) {

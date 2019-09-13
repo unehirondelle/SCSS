@@ -20,7 +20,7 @@ background-color: $bg-color;
   background-color: darken($bg-color, 5%);
 }*/
 
-header, .services, .portfolio, .about {
+header, .services, .portfolio, .about, .contacts {
   @include header;
 
   & h1 {
@@ -29,7 +29,7 @@ header, .services, .portfolio, .about {
     margin-bottom: 0;
   }
 
-  & p {
+  & p, [type~=phone], [type~=email] {
     color: darken($shadow, 5%);
     padding: 0 1rem 1rem;
     margin: 0;
@@ -38,10 +38,7 @@ header, .services, .portfolio, .about {
   & p.description {
     height: 12rem;
   }
-}
 
-.about {
-  margin-bottom: 3.5rem;
 }
 
 ul {
@@ -76,7 +73,8 @@ ul {
 
 .content {
   max-width: 50%;
-  margin: auto;
+  margin: 5rem auto;
+  padding-bottom: 1rem;
 }
 
 .services, .portfolio {
@@ -126,6 +124,10 @@ img {
   bottom: 0;
   width: 100%;
   margin-top: 1rem;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  font-size: 0.8rem;
 }
 
 @media (max-width: 760px) {
