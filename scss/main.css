@@ -1,12 +1,5 @@
-/*
-@mixin color-scheme {
-  @media screen and (max-width: 760px) {
-    $bg-color: $blue;
-    $bg-color-secondary: $blue-secondary;
-    $bg-color-visited: $blue-visited;
-  }
-}
-*/
+/*@import "about";
+@import "footer";*/
 body {
   margin: 0;
   background-color: #f6a0b0;
@@ -28,7 +21,7 @@ background-color: $bg-color;
 .line_4 {
   background-color: darken($bg-color, 5%);
 }*/
-header, .block {
+header, .about {
   font-family: "Open Sans Condensed", sans-serif;
   text-align: center;
   color: #ffffff;
@@ -39,18 +32,18 @@ header, .block {
   margin: 3.5rem 0 0;
   padding: 2rem 0;
 }
-header h1, .block h1 {
+header h1, .about h1 {
   padding-top: 1rem;
   margin-top: 0;
   margin-bottom: 0;
 }
-header p, .block p {
+header p, .about p {
   color: #2f4f4f;
   padding-bottom: 1rem;
   margin: 0;
 }
 
-.block {
+.about {
   margin-bottom: 3.5rem;
 }
 
@@ -84,9 +77,21 @@ ul li a:hover {
   background-image: linear-gradient(to bottom right, #f6a0b0, #d11336);
 }
 
-img {
-  width: 50%;
+.portfolio {
+  background-color: #2f4f4f;
   display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.card {
+  width: 30%;
+  margin: 0.7rem;
+}
+
+img {
+  max-width: 100%;
   margin: auto;
 }
 
@@ -104,11 +109,11 @@ img {
   border-color: #f42323;
   border-width: 1px;
   border-style: solid;
-  width: 50%;
   box-shadow: 0 0 2px 1px #2f4f4f;
   margin: 1rem auto 0;
   padding: 1rem;
   display: block;
+  width: 100%;
 }
 .button:hover {
   background-image: linear-gradient(to bottom right, #f6a0b0, #d11336);
@@ -124,6 +129,11 @@ img {
 
 .visited-button {
   background-image: linear-gradient(to bottom right, white, #f97979);
+}
+
+.content {
+  max-width: 50%;
+  margin: auto;
 }
 
 .footer {
