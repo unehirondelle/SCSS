@@ -1,0 +1,49 @@
+header, .services, .portfolio, .about, .contacts {
+  @include header;
+
+  & h1 {
+    padding-top: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  & p, [type~=phone], [type~=email] {
+    color: darken($shadow, 5%);
+    padding: 0 1rem 1rem;
+    margin: 0;
+  }
+
+  & p.description {
+    height: 12rem;
+  }
+
+}
+
+.content {
+  max-width: 50%;
+  margin: 5rem auto;
+  padding-bottom: 1rem;
+}
+
+.services, .portfolio {
+  background-color: lighten($shadow, 10%);
+  margin-bottom: 1rem;
+
+  .services-cards, .portfolio-cards {
+    @include card;
+  }
+}
+
+.card {
+  width: 30%;
+  margin: 0.7rem;
+}
+
+img {
+  max-width: 100%;
+  margin: auto;
+}
+
+[value|=service], [value|=card] {
+  @include main-text;
+}

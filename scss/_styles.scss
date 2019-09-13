@@ -1,103 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background-color: $background;
   height: auto;
-}
-
-/*.line_1 {
- background-color: lighten($bg-color, 20%);
-}
-
-.line_2 {
-  background-color: lighten($bg-color, 10%);
-}
-
-.line_3 {
-background-color: $bg-color;
-}
-
-.line_4 {
-  background-color: darken($bg-color, 5%);
-}*/
-
-header, .services, .portfolio, .about, .contacts {
-  @include header;
-
-  & h1 {
-    padding-top: 1rem;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  & p, [type~=phone], [type~=email] {
-    color: darken($shadow, 5%);
-    padding: 0 1rem 1rem;
-    margin: 0;
-  }
-
-  & p.description {
-    height: 12rem;
-  }
-
-}
-
-ul {
-  list-style-type: none;
-  float: right;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: $bg-color-secondary;
-  position: fixed;
-  top: 0;
-  width: 100%;
-
-  li {
-    float: left;
-    position: relative;
-    display: flex;
-
-
-    & a {
-      display: block;
-      text-decoration: none;
-      padding: 0.75rem 1rem;
-      @include main-text;
-    }
-
-    & a:hover {
-      @include secondary-button;
-    }
-  }
-}
-
-.content {
-  max-width: 50%;
-  margin: 5rem auto;
-  padding-bottom: 1rem;
-}
-
-.services, .portfolio {
-  background-color: lighten($shadow, 10%);
-  margin-bottom: 1rem;
-
-  .services-cards, .portfolio-cards {
-    @include card;
-  }
-}
-
-.card {
-  width: 30%;
-  margin: 0.7rem;
-}
-
-img {
-  max-width: 100%;
-  margin: auto;
-}
-
-[value|=service], [value|=card] {
-  @include main-text;
 }
 
 .button {
@@ -159,16 +67,4 @@ img {
   .visited-button {
     @include visited-button-alt;
   }
-
-  /*.primary-button {
-    @include primary-button;
-  }
-
-  .secondary-button {
-    @include secondary-button;
-  }
-
-  .visited-button {
-    @include visited-button;
-  }*/
 }

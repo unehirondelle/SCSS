@@ -1,51 +1,3 @@
-/*@import "about";
-@import "footer";*/
-body {
-  margin: 0;
-  background-color: #f6a0b0;
-  height: auto;
-}
-
-/*.line_1 {
- background-color: lighten($bg-color, 20%);
-}
-
-.line_2 {
-  background-color: lighten($bg-color, 10%);
-}
-
-.line_3 {
-background-color: $bg-color;
-}
-
-.line_4 {
-  background-color: darken($bg-color, 5%);
-}*/
-header, .services, .portfolio, .about, .contacts {
-  font-family: "Open Sans Condensed", sans-serif;
-  text-align: center;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 1.5rem;
-  width: 100%;
-  background-color: #558f8f;
-  margin: 3.5rem 0;
-  padding: 2rem 0;
-}
-header h1, .services h1, .portfolio h1, .about h1, .contacts h1 {
-  padding-top: 1rem;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-header p, header [type~=phone], header [type~=email], .services p, .services [type~=phone], .services [type~=email], .portfolio p, .portfolio [type~=phone], .portfolio [type~=email], .about p, .about [type~=phone], .about [type~=email], .contacts p, .contacts [type~=phone], .contacts [type~=email] {
-  color: #253f3f;
-  padding: 0 1rem 1rem;
-  margin: 0;
-}
-header p.description, .services p.description, .portfolio p.description, .about p.description, .contacts p.description {
-  height: 12rem;
-}
-
 ul {
   list-style-type: none;
   float: right;
@@ -76,6 +28,31 @@ ul li a {
 ul li a:hover {
   background-image: linear-gradient(to bottom right, #f6a0b0, #d11336);
   border-color: #d11336;
+}
+
+header, .services, .portfolio, .about, .contacts {
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 100%;
+  background-color: #558f8f;
+  margin: 3.5rem 0;
+  padding: 2rem 0;
+}
+header h1, .services h1, .portfolio h1, .about h1, .contacts h1 {
+  padding-top: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+header p, header [type~=phone], header [type~=email], .services p, .services [type~=phone], .services [type~=email], .portfolio p, .portfolio [type~=phone], .portfolio [type~=email], .about p, .about [type~=phone], .about [type~=email], .contacts p, .contacts [type~=phone], .contacts [type~=email] {
+  color: #253f3f;
+  padding: 0 1rem 1rem;
+  margin: 0;
+}
+header p.description, .services p.description, .portfolio p.description, .about p.description, .contacts p.description {
+  height: 12rem;
 }
 
 .content {
@@ -112,6 +89,16 @@ img {
   font-style: italic;
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 1.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #f6a0b0;
+  height: auto;
 }
 
 .button {
@@ -182,18 +169,6 @@ img {
   .visited-button {
     background-image: linear-gradient(to bottom right, white, #7986f9);
   }
-
-  /*.primary-button {
-    @include primary-button;
-  }
-
-  .secondary-button {
-    @include secondary-button;
-  }
-
-  .visited-button {
-    @include visited-button;
-  }*/
 }
 
 /*# sourceMappingURL=styles.css.map */
